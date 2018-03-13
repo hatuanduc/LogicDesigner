@@ -94,6 +94,5 @@ function regist() {
  * Validationエラー時のエラーマークアップハンドラです。<br/>
  */
 createValidationErrorPlacement = function(error, element) {
-        error.insertAfter($("#" + element.attr("id") + "Err"));
-        //TODO 123456
+        error.insertAfter(element.next());
 };
