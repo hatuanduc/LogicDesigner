@@ -1,0 +1,122 @@
+<imart type="head">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="csjs/core/core_request.js" type="text/javascript" ></script>
+	<script src="csjs/input.js" type="text/javascript" ></script>
+	<imart type="imuiScript" src="ui/libs/jquery-validation-1.9.0/jquery.validate.js" />
+    <imart type="imuiValidationRule" rulesName="rules" messagesName="messages"
+       rule="demo/input_validator#regist" />
+</imart>
+<div class="imui-title">
+    <h1><imart type="message" escapeXml="false" id="sreen.demo.title.001" /></h1>
+</div>
+<div class="imui-toolbar-wrap">
+    <div class="imui-toolbar-inner">
+        <!-- ツールバー左側 -->
+        <ul class="imui-list-toolbar">
+            <!-- 戻る -->
+            <li><a href="#dummy" class="imui-toolbar-icon" title="戻る"><span class="im-ui-icon-common-16-back"></span></a></li>
+        </ul>
+        <!-- ツールバー右側 -->
+        <ul class="imui-list-toolbar-utility">
+            <li><a href="#dummy" class="imui-toolbar-icon" title="最新情報"><span class="im-ui-icon-common-16-refresh"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="imui-form-container-wide">
+<form action="" id="demoForm">
+	<table class="imui-form">
+	    <tbody>
+	        <tr>
+	            <th class="wd-15 align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.002" /></label></th>
+	            <td><imart type="imuiTextbox" id="kbtKykNo" name="kbtKykNo" autofocus="true" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.019" /></label></th>
+	            <td><imart type="imuiTextbox" id="ksnNo" name="ksnNo" class="wd-40px" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.003" /></label></th>
+	            <td><imart type="imuiTextbox" id="hknsCd" name="hknsCd" autofocus="true" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.004" /></label></th>
+	            <td><imart type="imuiTextbox" id="sgyBsh" name="sgyBsh" autofocus="true" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.005" /></label></th>
+	            <td>
+	            	<imart type="imuiTextbox" id="hknStYmd" name="hknStYmd" autofocus="true" class="wd-80px" />
+	            	～
+	            	<imart type="imuiTextbox" id="hknEtYmd" name="hknEtYmd" autofocus="true" class="wd-80px" />
+	            </td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.006" /></label></th>
+	            <td>
+	            	<imart type="imuiTextbox" id="userCd" name="userCd" class="wd-40px" /> 
+	            	<imart type="message" escapeXml="false" id="sreen.demo.title.007" />
+	            	<imart type="imuiTextbox" id="userCd" name="userCd" class="wd-40px" />
+	            	<imart type="message" escapeXml="false" id="sreen.demo.title.008" />
+	            	<imart type="imuiTextbox" id="userCd" name="userCd" class="wd-40px" />
+	            </td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label class="imui-required"><imart type="message" escapeXml="false" id="sreen.demo.title.009" /></label></th>
+	            <td>
+	            	<imart type="imuiTextbox" id="snnYmd" name="snnYmd" class="wd-80px" autofocus="true" /></td>
+					<imart type="imuiCalendar" floatable="true" altField="#snnYmd" />
+				</td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label class="imui-required"><imart type="message" escapeXml="false" id="sreen.demo.title.010" /></label></th>
+	            <td><imart type="imuiSelect" list=$bind.list2 id="shain"/></td>
+	        </tr>
+	        
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.011" /></label></th>
+	            <td><imart type="imuiTextbox" id="sgyBsh" name="sgyBsh" autofocus="true" class="wd-60px" /></td>
+	        </tr>
+	         <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.012" /></label></th>
+	            <td><imart type="imuiTextbox" id="hknNsuWak" name="hknNsuWak" autofocus="true" class="wd-60px align-R" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.013" /></label></th>
+	            <td><imart type="imuiTextbox" id="userCd" name="userCd" autofocus="true" class="wd-60px " /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.014" /></label></th>
+	            <td>
+	            	<imart type="imuiTextbox" id="kyoKykStYmd" name="kyoKykStYmd" autofocus="true" class="wd-80px" /> ～
+	            	<imart type="imuiTextbox" id="kyoKykEtYmd" name="kyoKykEtYmd" autofocus="true" class="wd-80px" />
+	            </td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.015" /></label></th>
+	            <td><imart type="imuiTextbox" id="tisYmd" name="tisYmd" class="wd-80px" autofocus="true" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label class="imui-required"><imart type="message" escapeXml="false" id="sreen.demo.title.016" /></label></th>
+	            <td><imart type="imuiSelect"  list=$bind.list2 id="hakenSaki"/></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.017" /></label></th>
+	            <td><imart type="imuiTextArea" id="tkiJko" name="tkiJko" value="" rows="5" cols="50" /></td>
+	        </tr>
+	        <tr>
+	            <th class="align-R"><label><imart type="message" escapeXml="false" id="sreen.demo.title.018" /></label></th>
+	            <td>
+	            	<imart type="imuiTextbox" id="kinnYmd" name="kinnYmd" class="wd-80px" autofocus="true" /></td>
+					<imart type="imuiCalendar" floatable="true" altField="#kinnYmd" />
+				</td>
+	        </tr>
+	    </tbody>
+	</table>
+	</form>
+	<div class="div_button">
+		<imart type="imuiButton" id="backBtn" value="%sreen.demo.title.020" class="imui-large-button" />
+		<imart type="imuiButton" id="editBtn" value="%sreen.demo.title.021" class="imui-large-button" />
+		<imart type="imuiButton" id="registBtn" value="%sreen.demo.title.022" class="imui-large-button" />
+		<imart type="imuiButton" id="deleteBtn" value="%sreen.demo.title.023" class="imui-large-button" />
+	</div>
+</div>
